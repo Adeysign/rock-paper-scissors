@@ -9,8 +9,10 @@
 
 <script>
 
+    
+    function playGame() {
 
-    function getComputerChoice() {
+        function getComputerChoice() {
         const options = ['rock', 'paper', 'scissors'];
         const computerChoice = options[Math.floor(Math.random() * options.length)];
         return computerChoice;
@@ -40,14 +42,23 @@
             console.log("Paper beats Rock - you lose!");}
         else if (playerSelection === "paper" && computerSelection === "scissors") {
             console.log("Scissors beats Paper - you lose!");}
-        else (playerSelection === "scissors" && computerSelection === "rock")
-            console.log("Rock beats Scissors - you lose!");
+        else if (playerSelection === "scissors" && computerSelection === "rock") {
+            console.log("Rock beats Scissors - you lose!");}
+        else console.log("You didn't pick an option!");
+            
         
     }
     
     playRound(playerSelection, getComputerChoice());
 
+    }
 
+    playGame()
+    playGame()
+    playGame()
+    playGame()
+    playGame()
+    
 
 </script> 
 
